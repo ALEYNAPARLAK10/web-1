@@ -128,9 +128,9 @@ h2 {
     color: gold; 
 }
 .star.selected {
-    color: gold; /* Seçili yıldızların rengi */
+    color: gold; 
 }
 
 .star.selected ~ .star {
-    color: gray; /* Seçilmemiş yıldızların rengi */
+    color: gray; 
 }
