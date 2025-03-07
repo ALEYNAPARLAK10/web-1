@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5ebe1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+}
+
+.image img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    padding: 60px;
+}
+
+.category {
+    font-size: 18px;
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0;
+}
+
+.price {
+    margin: 10px 0;
+}
+
+.new-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2f7d37;
+}
+
+.old-price {
+    font-size: 14px;
+    color: gray;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.btn {
+    display: flex; /* Yan yana dizmek için */
+    justify-content: center; /* Ortalamak için */
+    align-items: center; /* Dikey hizalamayı sağlamak için */
+    gap: 15px; /* Butonlar arasında boşluk bırakmak için */
+    margin-top: 20px; /* Yukarıdan boşluk bırakmak için */
+}
+.hemen-al {
+    background-color: white;
+    border: 2px solid green;
+    color: green;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hemen-al:hover {
+    background-color: #f0f0f0; /* Hover etkisi */
+}
+
+
+.sepete-ekle {
+    background-color: green;
+    border: 2px solid green;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.sepete-ekle:hover {
+    background-color: #24672c; /* Hover etkisi */
+}
+.star-container {
+    display: flex; /* Yıldızları yan yana dizmek için */
+    gap: 5px; /* Yıldızlar arasına boşluk bırakmak için */
+    cursor: pointer;
+}
+
+.star {
+    font-size: 30px; /* Yıldızların boyutunu belirler */
+    color: gray; /* Varsayılan yıldız rengi */
+    transition: color 0.3s;
+}
+
+.star:hover, .star:hover ~ .star {
+    color: gold; /* Üzerine gelindiğinde renk değişimi */
+}
+.star.selected {
+    color: gold; /* Seçili yıldızların rengi */
+}
+
+.star.selected ~ .star {
+    color: gray; /* Seçilmemiş yıldızların rengi */
+}
