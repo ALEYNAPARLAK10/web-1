@@ -77,11 +77,11 @@ h2 {
 }
 
 .btn {
-    display: flex; /* Yan yana dizmek için */
-    justify-content: center; /* Ortalamak için */
-    align-items: center; /* Dikey hizalamayı sağlamak için */
-    gap: 15px; /* Butonlar arasında boşluk bırakmak için */
-    margin-top: 20px; /* Yukarıdan boşluk bırakmak için */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px;
+    margin-top: 20px; 
 }
 .hemen-al {
     background-color: white;
@@ -95,7 +95,7 @@ h2 {
 }
 
 .hemen-al:hover {
-    background-color: #f0f0f0; /* Hover etkisi */
+    background-color: #f0f0f0; 
 }
 
 
@@ -110,22 +110,22 @@ h2 {
     transition: 0.3s;
 }
 .sepete-ekle:hover {
-    background-color: #24672c; /* Hover etkisi */
+    background-color: #24672c; 
 }
 .star-container {
-    display: flex; /* Yıldızları yan yana dizmek için */
-    gap: 5px; /* Yıldızlar arasına boşluk bırakmak için */
+    display: flex; 
+    gap: 5px;
     cursor: pointer;
 }
 
 .star {
-    font-size: 30px; /* Yıldızların boyutunu belirler */
-    color: gray; /* Varsayılan yıldız rengi */
+    font-size: 30px;
+    color: gray; 
     transition: color 0.3s;
 }
 
 .star:hover, .star:hover ~ .star {
-    color: gold; /* Üzerine gelindiğinde renk değişimi */
+    color: gold; 
 }
 .star.selected {
     color: gold; /* Seçili yıldızların rengi */
